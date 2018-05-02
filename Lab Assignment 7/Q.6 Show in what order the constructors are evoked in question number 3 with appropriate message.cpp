@@ -31,48 +31,48 @@ class emp2:public employee{
 		emp2(){
 			cout<<"Emp2 class construcor invoked\n";
 		}
-		void get_input(){
-			cout<<"Enter the name of the employee :";
-			cin>>name;
-			cout<<"Employee Number :";
-			cin>>employee_number;
-			cout<<"Enter the type of compensation provided (0 for hourly, 1 for weekly, 2 for monthly):";
-			cin>>comp;
-		}
-		void show_info(){
-			cout<<"Name of Employee :"<<name<<endl;
-			cout<<"Employee Number :"<<employee_number<<endl;
-			if(comp==0){
-				cout<<"Employee is compensated  : hourly\n";
-			}
-			else if(comp==1){
-				cout<<"Employee is compensated : weekly\n";
-			}
-			else if(comp==2){
-				cout<<"Employee is compensated  : monthly\n";
-			}
-			else{
-				cout<<"Invalid input\n";
-			}
-		
-		}
+//		void get_input(){
+//			cout<<"Enter the name of the employee :";
+//			cin>>name;
+//			cout<<"Employee Number :";
+//			cin>>employee_number;
+//			cout<<"Enter the type of compensation provided (0 for hourly, 1 for weekly, 2 for monthly):";
+//			cin>>comp;
+//		}
+//		void show_info(){
+//			cout<<"Name of Employee :"<<name<<endl;
+//			cout<<"Employee Number :"<<employee_number<<endl;
+//			if(comp==hourly){
+//				cout<<"Employee is compensated  : hourly\n";
+//			}
+//			else if(comp==weekly){
+//				cout<<"Employee is compensated : weekly\n";
+//			}
+//			else if(comp==monthly){
+//				cout<<"Employee is compensated  : monthly\n";
+//			}
+//			else{
+//				cout<<"Invalid input\n";
+//			}
+//		
+//		}
 };
 
 class manager{
-	protected:
+/*	protected:
 	int salary;
 	int num_of_service_yr;
-		public:
+*/		public:
 			
 		manager(){
 			cout<<"manager class construcor incoked\n";
 		}
 };
 class lecturer{
-	protected:
+/*	protected:
 	int salary;
 	int num_of_teaching_hr_per_day;
-	public:
+*/	public:
 		
 		lecturer(){
 			cout<<"Lecturer class construcor invoked\n";
@@ -84,7 +84,7 @@ class man2:public emp2,public manager{
 		man2(){
 			cout<<"man2 class construcor invoked\n";
 		}
-		void get_data(){
+/*		void get_data(){
 			emp2::get_input();
 			cout<<"Enter the Salary :";
 			cin>>salary;
@@ -97,7 +97,7 @@ class man2:public emp2,public manager{
 			cout<<"Salary :"<<salary<<endl;
 			cout<<"Years of service provided :"<<num_of_service_yr<<endl;
 		}
-	
+*/	
 };
 class lect2:public emp2,public lecturer{
 	public:
@@ -105,7 +105,7 @@ class lect2:public emp2,public lecturer{
 		lect2(){
 			cout<<"lect2 class construcor incoked\n";
 		}
-		void get_data(){
+/*		void get_data(){
 			emp2::get_input();
 			cout<<"Enter salary :";
 			cin>>salary;
@@ -117,7 +117,7 @@ class lect2:public emp2,public lecturer{
 			cout<<"Salary :"<<salary<<endl;
 			cout<<"Total teaching hours per day :"<<num_of_teaching_hr_per_day<<endl;
 		}
-		
+*/		
 };
 
 int main(){

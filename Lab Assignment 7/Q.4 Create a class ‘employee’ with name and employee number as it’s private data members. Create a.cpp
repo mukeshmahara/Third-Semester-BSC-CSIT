@@ -6,7 +6,7 @@ using namespace std;
 
 class employee{
 	
-	char name[15];
+	char name[15],address[20];
 	int employee_num;
 	public:
 		void get_input(){
@@ -14,10 +14,13 @@ class employee{
 			gets(name);
 			cout<<"Employee number :";
 			cin>>employee_num;
+			cout<<"Enter the address of the employee :";
+			cin>>address;
 		}
 		void show_info(){
 			cout<<"Employee Name :"<<name<<endl;
 			cout<<"Employee Number :"<<employee_num<<endl;
+			cout<<"Employee Address : "<<address<<endl;
 		}
 	
 };

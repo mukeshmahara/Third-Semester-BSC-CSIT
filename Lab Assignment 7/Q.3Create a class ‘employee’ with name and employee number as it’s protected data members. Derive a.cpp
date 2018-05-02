@@ -102,7 +102,7 @@ int main(){
 	m.show_data();
 	
 	lect2 l;
-	cout<<"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Enter detail about man2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n";
+	cout<<"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Enter detail about lect2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n";
 	l.get_data();
 	cout<<"\nDETAIL of lect2\n";
 	cout<<"______________________\n";
